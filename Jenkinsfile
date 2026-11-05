@@ -7,7 +7,7 @@ pipeline {
   }
   triggers { pollSCM('H/2 * * * *') }
   environment {
-    DEPLOY_HOST = 'IP_PRIVADA_FRONT'
+    DEPLOY_HOST = '172.31.25.146'
     DEPLOY_USER = 'deploy'
     NODE_OPTIONS = '--max-old-space-size=384'
   }
